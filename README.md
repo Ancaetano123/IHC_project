@@ -1,50 +1,72 @@
-# Welcome to your Expo app
+# IHC Project
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+Mobile application to explore nearby points of interest (POI), developed in React Native with Expo. Allows you to view locations on the map, search, add new points with photo, description, and category, and get routes.
 
-## Get started
+## Demo
 
-1. Install dependencies
+The project can be run locally on Android/iOS devices or emulators using Expo Go.
 
-   ```bash
-   npm install
-   ```
+## Features
 
-2. Start the app
+- View points of interest on the map (Google Places + user-created locations)
+- Smart search with Google Places suggestions
+- Add new POIs with photo, name, description, and category
+- Select categories to filter locations (restaurants, cafés, hotels, etc.)
+- View location details, including image, address, and reviews
+- Get routes to the selected location
+- Modern and responsive interface
 
-   ```bash
-   npx expo start
-   ```
+## How to run in development mode
 
-In the output, you'll find options to open the app in a
+Clone the repository:
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
-
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
-
-## Get a fresh project
-
-When you're ready, run:
-
-```bash
-npm run reset-project
+```sh
+git clone https://github.com/Ancaetano123/IHC_project
+cd IHC_project
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+Install dependencies:
 
-## Learn more
+```sh
+npm install
+# or
+yarn
+```
 
-To learn more about developing your project with Expo, look at the following resources:
+Start the Expo development server:
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+```sh
+npx expo start
+```
 
-## Join the community
+Open the app on your mobile device with the [Expo Go](https://expo.dev/client) app or on an Android/iOS emulator.
 
-Join our community of developers creating universal apps.
+## How to build for production
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+To generate a build for Android/iOS:
+
+```sh
+npx expo build:android
+npx expo build:ios
+```
+
+See the [Expo documentation](https://docs.expo.dev/distribution/building-standalone-apps/) for details on publishing.
+
+## Technologies used
+
+- **React Native** — cross-platform mobile development
+- **Expo** — tools and bundler for React Native
+- **Google Maps & Places API** — maps and location data
+- **JavaScript/TypeScript** — main language
+
+## Credits & Inspiration
+
+Developed by António Caetano.
+
+Some ideas and components inspired by examples from the Expo and Google Maps documentation.
+
+Images, graphics, and code are original.
+
+---
+
+Have fun exploring and contributing to the IHC Project!
